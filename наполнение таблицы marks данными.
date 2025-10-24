@@ -1,0 +1,2 @@
+INSERT INTO marks (stud_id, subj_id, mark) VALUES (2, 3, 4),
+INSERT INTO marks (stud_id, subj_id, mark) VALUES (3, 2, 3)
