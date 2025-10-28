@@ -1,2 +1,10 @@
-INSERT INTO marks (stud_id, subj_id, mark) VALUES (2, 3, 4),
-INSERT INTO marks (stud_id, subj_id, mark) VALUES (3, 2, 3)
+INSERT INTO marks (stud_id, subj_id, mark) VALUES
+(1, (SELECT id FROM subjects WHERE name = 'перваяпара'), 5),
+(1, (SELECT id FROM subjects WHERE name = 'втораяпара'), 4),
+(1, (SELECT id FROM subjects WHERE name = 'третьяпара'), 5),
+(2, (SELECT id FROM subjects WHERE name = 'перваяпара'), 3),
+(2, (SELECT id FROM subjects WHERE name = 'втораяпара'), 5),
+(2, (SELECT id FROM subjects WHERE name = 'третьяпара'), 4),
+(3, (SELECT id FROM subjects WHERE name = 'перваяпара'), 4),
+(3, (SELECT id FROM subjects WHERE name = 'втораяпара'), 3),
+(3, (SELECT id FROM subjects WHERE name = 'третьяпара'), 5);
